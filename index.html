@@ -56,7 +56,7 @@
       <h1 class="display-2 fw-bold"></h1>
     </div>
     <p class="lead fs-4">Where creativity meets code — let’s build something extraordinary.</p>
-    <a href="#contact" class="btn btn-lg mt-3"><span>Get Started</span></a>
+    <button class="read-more-btn btn btn-dark">Get Started</button>
   </div>
 </section>
 
@@ -65,118 +65,136 @@
 <!-- banner code ends here -->
 
 
-
-
-<section id="projects" class="projects-section overflow-hidden mt-4 min-vh-100 shadow  ">
+<section id="projects" class="projects-section overflow-hidden mt-4 min-vh-100 shadow">
     <div class="container-fluid text-center">
-        <h2 class="mt-4 mb-4 display-5 fw-bold px-md-5 px-3 text-start text-white">Portfolio</h2>
+        <h2 class="mt-4 mb-4 display-5 fw-bold px-md-5 px-3 text-start" style="color: white;">Portfolio</h2>
         <div class="project-scroll-container">
-            <div class="project-scroll-wrapper">
+            <div class="project-scroll-wrapper" id="project-scroll-wrapper">
+                <!-- Project 1 - Paytm Clone -->
                 <div class="project-card">
-                    <img src="https://via.placeholder.com/300x200/FF5733/FFFFFF?text=Project+App" alt="Project 1" class="project-img img-fluid">
-                    <div class="project-info">
-                        <h3 class="fw-bold">Dynamic Web Application</h3>
-                        <p>Developed a full-stack web application with user authentication, real-time data updates, and a RESTful API. Technologies used: React, Node.js, Express, MongoDB.</p>
-                        <button class="read-more-btn btn btn-dark">View Details</button>
+                    <div class="project-img-container">
+                        <img src="./assets/paytm_clone_mobile.jpeg" alt="Paytm Mobile Clone" class="project-img img-fluid">
                     </div>
-                </div>
-                <div class="project-card">
-                    <img src="https://via.placeholder.com/300x200/33FF57/FFFFFF?text=Data+Viz" alt="Project 2" class="project-img img-fluid">
                     <div class="project-info">
-                        <h3 class="fw-bold">Interactive Data Visualization</h3>
-                        <p>Created interactive dashboards to visualize complex datasets, allowing users to filter and explore insights. Tools: Python (Pandas, Matplotlib), D3.js.</p>
-                        <button class="read-more-btn btn btn-dark">View Details</button>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img src="https://via.placeholder.com/300x200/3366FF/FFFFFF?text=Mobile+App" alt="Project 3" class="project-img img-fluid">
-                    <div class="project-info">
-                        <h3 class="fw-bold">Cross-Platform Mobile App</h3>
-                        <p>Designed and built a mobile application for both iOS and Android platforms, focusing on clean UI/UX and offline capabilities. Framework: React Native.</p>
-                        <button class="read-more-btn btn btn-dark">View Details</button>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img src="https://via.placeholder.com/300x200/FF0000/FFFFFF?text=Project+4" alt="Project 4" class="project-img img-fluid">
-                    <div class="project-info">
-                        <h3 class="fw-bold">E-commerce Backend</h3>
-                        <p>Built a robust backend for an e-commerce platform with secure payment integration and order management. Technologies: Django, PostgreSQL, Stripe API.</p>
-                        <button class="read-more-btn btn btn-dark">View Details</button>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img src="https://via.placeholder.com/300x200/00FFFF/000000?text=Project+5" alt="Project 5" class="project-img img-fluid">
-                    <div class="project-info">
-                        <h3 class="fw-bold">Machine Learning Model</h3>
-                        <p>Developed a predictive machine learning model for customer churn, improving retention strategies. Tools: TensorFlow, Keras, Python.</p>
+                        <h3 class="fw-bold">Paytm Mobile UI Clone</h3>
+                        <p>Developed a responsive Paytm mobile UI clone with modern design elements and smooth animations using React Native. Implemented wallet and payment flows.</p>
                         <button class="read-more-btn btn btn-dark">View Details</button>
                     </div>
                 </div>
 
+                <!-- Project 2 - Spotify Clone -->
                 <div class="project-card">
-                    <img src="https://via.placeholder.com/300x200/FF5733/FFFFFF?text=Project+App" alt="Project 1" class="project-img img-fluid">
+                    <div class="project-img-container">
+                        <img src="./assets/spotify_clone_web.png" alt="Spotify Web Clone" class="project-img img-fluid">
+                    </div>
                     <div class="project-info">
-                        <h3 class="fw-bold">Dynamic Web Application</h3>
-                        <p>Developed a full-stack web application with user authentication, real-time data updates, and a RESTful API. Technologies used: React, Node.js, Express, MongoDB.</p>
+                        <h3 class="fw-bold">Spotify Web UI Clone</h3>
+                        <p>Created a Spotify web interface clone with music player functionality and playlist management using React and CSS Grid. Features responsive design.</p>
                         <button class="read-more-btn btn btn-dark">View Details</button>
                     </div>
                 </div>
+
+                <!-- Project 3 - Paytm Clone (Variant) -->
                 <div class="project-card">
-                    <img src="https://via.placeholder.com/300x200/33FF57/FFFFFF?text=Data+Viz" alt="Project 2" class="project-img img-fluid">
+                    <div class="project-img-container">
+                        <img src="./assets/paytm_clone_mobile.jpeg" alt="Paytm Mobile Redesign" class="project-img img-fluid">
+                    </div>
                     <div class="project-info">
-                        <h3 class="fw-bold">Interactive Data Visualization</h3>
-                        <p>Created interactive dashboards to visualize complex datasets, allowing users to filter and explore insights. Tools: Python (Pandas, Matplotlib), D3.js.</p>
+                        <h3 class="fw-bold">Paytm Redesign Concept</h3>
+                        <p>Redesigned Paytm's mobile interface with improved UX flows and modern aesthetics. Added dark mode support and enhanced payment confirmation screens.</p>
                         <button class="read-more-btn btn btn-dark">View Details</button>
                     </div>
                 </div>
+
+                <!-- Project 4 - Spotify Clone (Variant) -->
                 <div class="project-card">
-                    <img src="https://via.placeholder.com/300x200/3366FF/FFFFFF?text=Mobile+App" alt="Project 3" class="project-img img-fluid">
+                    <div class="project-img-container">
+                        <img src="./assets/spotify_clone_web.png" alt="Spotify Dark Mode" class="project-img img-fluid">
+                    </div>
                     <div class="project-info">
-                        <h3 class="fw-bold">Cross-Platform Mobile App</h3>
-                        <p>Designed and built a mobile application for both iOS and Android platforms, focusing on clean UI/UX and offline capabilities. Framework: React Native.</p>
+                        <h3 class="fw-bold">Spotify Dark Mode Concept</h3>
+                        <p>Enhanced Spotify's web player with a custom dark theme, animated transitions, and improved playlist management interface.</p>
                         <button class="read-more-btn btn btn-dark">View Details</button>
                     </div>
                 </div>
+
+                <!-- Project 5 - Paytm Clone (Advanced) -->
                 <div class="project-card">
-                    <img src="https://via.placeholder.com/300x200/FF0000/FFFFFF?text=Project+4" alt="Project 4" class="project-img img-fluid">
+                    <div class="project-img-container">
+                        <img src="./assets/paytm_clone_mobile.jpeg" alt="Paytm Pro Version" class="project-img img-fluid">
+                    </div>
                     <div class="project-info">
-                        <h3 class="fw-bold">E-commerce Backend</h3>
-                        <p>Built a robust backend for an e-commerce platform with secure payment integration and order management. Technologies: Django, PostgreSQL, Stripe API.</p>
+                        <h3 class="fw-bold">Paytm Pro Version</h3>
+                        <p>Extended the Paytm clone with additional features like bill splitting, expense tracking, and financial analytics dashboard.</p>
                         <button class="read-more-btn btn btn-dark">View Details</button>
                     </div>
                 </div>
+
+                <!-- Project 6 - Spotify Clone (Advanced) -->
                 <div class="project-card">
-                    <img src="https://via.placeholder.com/300x200/00FFFF/000000?text=Project+5" alt="Project 5" class="project-img img-fluid">
+                    <div class="project-img-container">
+                        <img src="./assets/spotify_clone_web.png" alt="Spotify Collaborative" class="project-img img-fluid">
+                    </div>
                     <div class="project-info">
-                        <h3 class="fw-bold">Machine Learning Model</h3>
-                        <p>Developed a predictive machine learning model for customer churn, improving retention strategies. Tools: TensorFlow, Keras, Python.</p>
+                        <h3 class="fw-bold">Spotify Collaborative</h3>
+                        <p>Added real-time collaborative playlist editing and synchronized music playback features to the Spotify clone.</p>
+                        <button class="read-more-btn btn btn-dark">View Details</button>
+                    </div>
+                </div>
+
+                <!-- Project 7 - Paytm Business -->
+                <div class="project-card">
+                    <div class="project-img-container">
+                        <img src="./assets/paytm_clone_mobile.jpeg" alt="Paytm Business" class="project-img img-fluid">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="fw-bold">Paytm Business Version</h3>
+                        <p>Developed a business-focused version of the Paytm clone with merchant tools, bulk payments, and invoice generation.</p>
+                        <button class="read-more-btn btn btn-dark">View Details</button>
+                    </div>
+                </div>
+
+                <!-- Project 8 - Spotify Analytics -->
+                <div class="project-card">
+                    <div class="project-img-container">
+                        <img src="./assets/spotify_clone_web.png" alt="Spotify Analytics" class="project-img img-fluid">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="fw-bold">Spotify Listening Analytics</h3>
+                        <p>Enhanced the Spotify clone with detailed listening statistics, mood analysis, and personalized recommendations.</p>
                         <button class="read-more-btn btn btn-dark">View Details</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <script>
+        // JavaScript to duplicate project cards for seamless infinite scroll
+        document.addEventListener('DOMContentLoaded', () => {
+            const wrapper = document.getElementById('project-scroll-wrapper');
+            const cards = wrapper.innerHTML;
+            wrapper.innerHTML += cards; // Duplicate the cards
+        });
+    </script>
 </section>
 
-
-
 <!-- testimonals section -->
-<section id="testimonials" class="py-5 text-white min-vh-100 mt-4 d-flex align-items-center" style="background: #000;">
+<section id="testimonials" class="py-5 text-white min-vh-100 mt-4 d-flex align-items-center" style="background: linear-gradient(135deg, #0d0d0d 0%, #1a1a1a 100%);">
   <div class="container-fluid">
-    <h2 class="mt-4 mb-4 display-5 fw-bold px-md-5 px-3 text-start" style="color: #fff;">Testimonials</h2>
+    <h2 class="mt-4 mb-5 display-5 fw-bold px-md-5 px-3 text-start" style="color: #f8f9fa;">What Our Clients Say</h2>
 
     <div class="row g-md-4 px-md-5 px-0">
       <!-- Testimonial 1 -->
       <div class="col-md-6 col-lg-4 mb-4">
-        <div class="card h-100 text-white testimonial-card border-0">
+        <div class="card h-100 testimonial-card border-0">
           <div class="card-body">
             <p class="card-text">
               “Working with this team was an absolute game-changer. Their attention to detail and creativity
               transformed our old website into a modern, responsive masterpiece that reflects our brand perfectly.”
             </p>
           </div>
-          <div class="card-footer bg-transparent d-flex align-items-center border-top border-light">
-            <img src="https://randomuser.me/api/portraits/men/32.jpg" class="rounded-circle me-3 border border-white" width="50" height="50" alt="Client 1">
+          <div class="card-footer bg-transparent d-flex align-items-center border-top border-light pt-3">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" class="rounded-circle me-3 shadow border border-white" width="55" height="55" alt="Client 1">
             <div>
               <h6 class="mb-0 fw-semibold">Ravi Sharma</h6>
               <small class="text-muted">Marketing Head, XyzCorp</small>
@@ -187,14 +205,14 @@
 
       <!-- Testimonial 2 -->
       <div class="col-md-6 col-lg-4 mb-4">
-        <div class="card h-100 text-white testimonial-card border-0">
+        <div class="card h-100 testimonial-card border-0">
           <div class="card-body">
             <p class="card-text">
               “The design and UX delivered were beyond our expectations. Our bounce rate dropped drastically, and clients love the fresh look. We truly felt heard throughout the process.”
             </p>
           </div>
-          <div class="card-footer bg-transparent d-flex align-items-center border-top border-light">
-            <img src="https://randomuser.me/api/portraits/women/45.jpg" class="rounded-circle me-3 border border-white" width="50" height="50" alt="Client 2">
+          <div class="card-footer bg-transparent d-flex align-items-center border-top border-light pt-3">
+            <img src="https://randomuser.me/api/portraits/women/45.jpg" class="rounded-circle me-3 shadow border border-white" width="55" height="55" alt="Client 2">
             <div>
               <h6 class="mb-0 fw-semibold">Ananya Verma</h6>
               <small class="text-muted">Founder, Creativa</small>
@@ -205,14 +223,14 @@
 
       <!-- Testimonial 3 -->
       <div class="col-md-6 col-lg-4 mb-4">
-        <div class="card h-100 text-white testimonial-card border-0">
+        <div class="card h-100 testimonial-card border-0">
           <div class="card-body">
             <p class="card-text">
               “Seamless execution and top-tier aesthetics. The new website is not only beautiful but loads faster, is fully mobile-optimized, and reflects our innovation-first mindset.”
             </p>
           </div>
-          <div class="card-footer bg-transparent d-flex align-items-center border-top border-light">
-            <img src="https://randomuser.me/api/portraits/men/52.jpg" class="rounded-circle me-3 border border-white" width="50" height="50" alt="Client 3">
+          <div class="card-footer bg-transparent d-flex align-items-center border-top border-light pt-3">
+            <img src="https://randomuser.me/api/portraits/men/52.jpg" class="rounded-circle me-3 shadow border border-white" width="55" height="55" alt="Client 3">
             <div>
               <h6 class="mb-0 fw-semibold">Amit Patel</h6>
               <small class="text-muted">Product Lead, Innovate360</small>
@@ -224,51 +242,60 @@
   </div>
 </section>
 
-
-
-<section class="contact-section py-5 text-black min-vh-100 d-flex align-items-center" id="contact" style="background: #fff;">
-  <div class="mt-4 mb-4 container-fluid px-lg-5 px-md-4 px-3">
-    <div class="row justify-content-center">
-      <div class="col-12">
-        <h2 class="mb-1 display-5 fw-bold text-start">Contact Us</h2>
-      </div>
-      
-      <div class="col-lg-11">
-        <div class="row gx-lg-5 gy-4">
-          <!-- Left Content - Text and Social Icons -->
-          <div class="col-lg-6 pe-lg-5">
-            <p class="mb-4 text-muted">Have a project in mind? Let's build something great together. Fill out the form and we'll get back to you.</p>
-            <div class="social-icons d-flex justify-content-start">
-              <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-              <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-              <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-              <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+<section class="contact-section">
+  <div class="container-fluid">
+    <div class="row g-md-4">
+      <!-- Left Column - Contact Info -->
+      <div class="col-lg-6 col-md-12">
+        <div class="contact-content">
+          <h2>Let's Create Something Amazing Together</h2>
+          <div class="contact-text">
+            <p>Have a project in mind or want to discuss how we can help your business grow? Reach out to us - we'd love to hear from you.</p>
+            <p>Our team is ready to answer your questions and provide the digital solutions your business needs.</p>
+          </div>
+          
+          <div class="contact-details mt-4">
+            <div class="detail-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>123 Design Street, Creative City</span>
+            </div>
+            <div class="detail-item">
+              <i class="fas fa-phone-alt"></i>
+              <span>+1 234 567 890</span>
+            </div>
+            <div class="detail-item">
+              <i class="fas fa-envelope"></i>
+              <span>hello@digitalagency.com</span>
             </div>
           </div>
-
-          <!-- Right Content - Form -->
-          <div class="col-lg-6">
-            <form class="contact-form needs-validation" novalidate>
-              <div class="form-group mb-3">
-                <input type="text" class="form-control" placeholder="Your Name" required>
-                <div class="invalid-feedback">Please enter your name</div>
-              </div>
-              <div class="form-group mb-3">
-                <input type="email" class="form-control" placeholder="Your Email" required>
-                <div class="invalid-feedback">Please enter a valid email</div>
-              </div>
-              <div class="form-group mb-3">
-                <input type="text" class="form-control" placeholder="Subject" required>
-                <div class="invalid-feedback">Please enter a subject</div>
-              </div>
-              <div class="form-group mb-4">
-                <textarea class="form-control" placeholder="Your Message" rows="5" required></textarea>
-                <div class="invalid-feedback">Please enter your message</div>
-              </div>
-              <button type="submit" class="btn btn-primary w-100">Send Message</button>
-            </form>
+          
+          <div class="social-icons mt-4">
+            <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
           </div>
         </div>
+      </div>
+      
+      <!-- Right Column - Contact Form -->
+      <div class="col-lg-6 col-md-12">
+        <form class="contact-form">
+          <div class="form-group">
+            <input type="text" placeholder="Your Name" required class="form-control">
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Your Email" required class="form-control">
+          </div>
+          <div class="form-group">
+            <input type="text" placeholder="Subject" class="form-control">
+          </div>
+          <div class="form-group">
+            <textarea rows="5" placeholder="Your Message" required class="form-control"></textarea>
+          </div>
+          <button class="read-more-btn btn btn-dark">Send Message</button>
+        </form>
       </div>
     </div>
   </div>
@@ -276,17 +303,22 @@
 
 <footer class="footer-section">
   <div class="container-fluid py-5 px-lg-5 px-md-4 px-3 text-white">
-    <div class="row mb-4">
-      <div class="col-12">
-        <h2 class="footer-logo mb-3 display-5 fw-bold">DigitalAgency</h2>
-        <p class="footer-tagline mb-4">
-          Transforming ideas into digital experiences that inspire and engage.
+    <div class="row mb-5 text-center text-lg-start">
+      <div class="col-lg-4 mb-4 mb-lg-0">
+        <h2 class="footer-logo display-5 fw-bold">DigitalAgency</h2>
+        <p class="footer-tagline">
+          We transform your visions into powerful digital experiences that spark results.
         </p>
+        <div class="footer-social mt-3">
+          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-dribbble"></i></a>
+        </div>
       </div>
-    </div>
 
-    <div class="row gy-4">
-      <div class="col-lg-3 col-md-6 col-sm-6">
+      <div class="col-lg-2 col-md-6 col-sm-6 mb-4">
         <h5 class="footer-heading">Services</h5>
         <ul class="list-unstyled">
           <li><a href="#">Web Design</a></li>
@@ -297,40 +329,32 @@
         </ul>
       </div>
 
-      <div class="col-lg-3 col-md-6 col-sm-6">
+      <div class="col-lg-2 col-md-6 col-sm-6 mb-4">
         <h5 class="footer-heading">Company</h5>
         <ul class="list-unstyled">
           <li><a href="#">About Us</a></li>
-          <li><a href="#">Our Team</a></li>
+          <li><a href="#">Team</a></li>
           <li><a href="#">Case Studies</a></li>
           <li><a href="#">Careers</a></li>
           <li><a href="#">Blog</a></li>
         </ul>
       </div>
 
-      <div class="col-lg-6 col-md-12">
-        <h5 class="footer-heading">Contact</h5>
+      <div class="col-lg-4">
+        <h5 class="footer-heading">Get in Touch</h5>
         <div class="contact-info">
           <p><i class="fas fa-map-marker-alt me-2"></i> 123 Design Street, Creative City</p>
           <p><i class="fas fa-phone-alt me-2"></i> +1 234 567 890</p>
           <p><i class="fas fa-envelope me-2"></i> hello@digitalagency.com</p>
         </div>
-
-        <div class="footer-social mt-4">
-          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-          <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-          <a href="#" class="social-icon"><i class="fab fa-dribbble"></i></a>
-        </div>
       </div>
     </div>
 
-    <hr class="my-4 border-light opacity-25">
+    <hr class="border-light opacity-25">
 
     <div class="row align-items-center">
       <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-        <p class="mb-0">© 2025 DigitalAgency. All rights reserved.</p>
+        <p class="mb-0">© 2025 <strong>DigitalAgency</strong>. All rights reserved.</p>
       </div>
       <div class="col-md-6 text-center text-md-end">
         <div class="footer-bottom-links">
@@ -342,6 +366,8 @@
     </div>
   </div>
 </footer>
+
+
 <script src="./dynamic styles/index.js"></script>
 <script>
 document.addEventListener('DOMContentLoaded', function() {

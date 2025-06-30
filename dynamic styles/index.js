@@ -137,12 +137,3 @@
 // console.log(document);
 
 
-let oneEle=document.getElementById("one");
-let text =oneEle.textContent;
-console.log(text);
-
-let oneEle1=document.getElementById("two");
-oneEle1.innerHTML="<h1>dfghj</h1>";
-
-oneEle1.style.backgroundColor="red";
-oneEle1.style.color="yellow";
