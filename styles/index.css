@@ -220,7 +220,7 @@ html{
 
 /* === PROJECTS SECTION === */
 .projects-section {
-    height: 100vh; /* Strict 100vh height */
+    height: auto; /* Strict 100vh height */
     padding: 40px 0; /* Reduced padding to fit content */
     background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%);
     position: relative;
