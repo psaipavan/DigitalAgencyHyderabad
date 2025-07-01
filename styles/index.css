@@ -474,7 +474,7 @@ html{
 
 @media (max-width: 576px) {
     .projects-section {
-      height: 100vh;
+      height: auto;
       padding: 40px 0;
     }
     
