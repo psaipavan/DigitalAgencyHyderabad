@@ -1031,39 +1031,40 @@ textarea.form-control {
     padding: 0.65rem 0.75rem;
   }
 }
+/* Contact Section CSS (unchanged from your original) */
+
+/* Updated Footer CSS with Consistent Responsive Behavior */
 .footer-section {
   background: linear-gradient(to right, #0f0f0f, #1a1a1a);
   color: #fff;
-  padding: 5rem 0 2rem;
+  padding: 4rem 0 2rem;
   font-family: 'Fira Sans', sans-serif;
-  position: relative;
-  overflow: hidden;
 }
 
 .footer-logo {
-  font-size: 2.8rem;
+  font-size: 2.5rem;
   font-weight: 700;
   background: linear-gradient(90deg, #ff6a00, #ff0066);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  display: inline-block;
   margin-bottom: 1rem;
+  display: inline-block;
 }
 
 .footer-tagline {
-  font-size: 1.05rem;
-  line-height: 1.8;
+  font-size: 1.1rem;
+  line-height: 1.7;
   color: #ccc;
-  opacity: 0.85;
+  margin-bottom: 1.5rem;
 }
 
 .footer-heading {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-weight: 600;
   margin-bottom: 1.2rem;
+  color: #fff;
   position: relative;
   display: inline-block;
-  color: #fff;
 }
 
 .footer-heading::after {
@@ -1081,12 +1082,12 @@ textarea.form-control {
 }
 
 .footer-section ul li {
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.7rem;
 }
 
 .footer-section ul li a {
-  text-decoration: none;
   color: #ccc;
+  text-decoration: none;
   transition: color 0.3s ease;
   font-size: 1rem;
 }
@@ -1097,73 +1098,156 @@ textarea.form-control {
 
 .contact-info {
   padding: 1rem 0;
-  color: #ccc;
-  font-size: 1rem;
 }
 
 .contact-info p {
+  color: #ccc;
   margin-bottom: 0.8rem;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
 }
 
 .contact-info i {
-  width: 20px;
   color: #ff6a00;
+  width: 20px;
+  margin-right: 0.5rem;
 }
 
 .footer-social {
   display: flex;
   gap: 1rem;
   margin-top: 1rem;
-  flex-wrap: wrap;
 }
 
-.footer-social .social-icon {
-  font-size: 1.4rem;
- 
+.footer-social a {
+  color: #ccc;
+  font-size: 1.2rem;
   transition: color 0.3s ease;
-  text-decoration: none;
 }
 
+.footer-social a:hover {
+  color: #ff6a00;
+}
 
 .footer-bottom-links {
   display: flex;
   gap: 1.5rem;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 .footer-bottom-links a {
   color: #aaa;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
+.footer-bottom-links a:hover {
+  color: #ff6a00;
+}
 
-/* Responsive */
-@media (max-width: 768px) {
-  .footer-section {
-    text-align: center;
-    padding: 4rem 1rem 2rem;
-  }
-
-  .footer-social {
-    justify-content: center;
-  }
-
-  .footer-bottom-links {
-    flex-direction: column;
-    align-items: center;
-    margin-top: 1rem;
-  }
-
+/* Responsive Adjustments Matching Contact Section */
+@media (max-width: 1199.98px) {
   .footer-logo {
     font-size: 2.3rem;
   }
+  .footer-tagline {
+    font-size: 1.05rem;
+  }
+  .footer-heading {
+    font-size: 1.2rem;
+  }
+  .footer-section ul li a,
+  .contact-info p {
+    font-size: 0.95rem;
+  }
+}
 
+@media (max-width: 991.98px) {
+  .footer-section {
+    padding: 3.5rem 0 2rem;
+  }
+  .footer-logo {
+    font-size: 2.1rem;
+  }
+  .footer-tagline {
+    font-size: 1rem;
+  }
+  .footer-heading {
+    font-size: 1.15rem;
+  }
+  .footer-section ul li a,
+  .contact-info p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .footer-section {
+    padding: 3rem 0 1.5rem;
+    text-align: center;
+  }
   .footer-heading::after {
     margin-left: auto;
     margin-right: auto;
   }
+  .footer-social {
+    justify-content: center;
+  }
+  .contact-info p {
+    justify-content: center;
+  }
+  .footer-logo {
+    font-size: 2rem;
+  }
+  .footer-tagline {
+    font-size: 0.95rem;
+  }
+  .footer-heading {
+    font-size: 1.1rem;
+  }
 }
 
+@media (max-width: 575.98px) {
+  .footer-section {
+    padding: 2.5rem 0 1rem;
+  }
+  .footer-logo {
+    font-size: 1.8rem;
+  }
+  .footer-tagline {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+  .footer-heading {
+    font-size: 1.05rem;
+  }
+  .footer-section ul li a,
+  .contact-info p {
+    font-size: 0.85rem;
+  }
+  .footer-bottom-links {
+    gap: 1rem;
+    justify-content: center;
+  }
+  .footer-bottom-links a {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .footer-logo {
+    font-size: 1.6rem;
+  }
+  .footer-tagline {
+    font-size: 0.85rem;
+  }
+  .footer-heading {
+    font-size: 1rem;
+  }
+  .footer-section ul li a,
+  .contact-info p {
+    font-size: 0.8rem;
+  }
+}

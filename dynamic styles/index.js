@@ -137,3 +137,12 @@
 // console.log(document);
 
 
+let API="http://localhost:3000/student";
+async function getData(){
+    let res=await fetch(API,{
+        method:"GET"
+    });
+    let data=await res.json();
+    console.log(data);
+}
+getData();
