@@ -704,6 +704,7 @@ html{
 /* === CONTACT SECTION === */
 /* Contact Section Styles */
 /* Contact Section Styles */
+/* Contact Section Styles */
 .contact-section {
   background: #fff;
   color: #000;
@@ -892,16 +893,16 @@ textarea.form-control {
   transform: translateY(-3px);
 }
 
-/* Responsive Styles */
+/* Responsive Text Sizing */
 @media (max-width: 1199.98px) {
   .contact-section h2 {
     font-size: 2.2rem;
   }
-  .contact-content {
-    padding: 0 2rem;
+  .contact-section p {
+    font-size: 1.05rem;
   }
-  .contact-form {
-    padding: 2rem;
+  .detail-item {
+    font-size: 1rem;
   }
 }
 
@@ -912,6 +913,15 @@ textarea.form-control {
   
   .contact-section h2 {
     font-size: 2rem;
+  }
+  
+  .contact-section p {
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+  
+  .detail-item {
+    font-size: 0.98rem;
   }
   
   .contact-form {
@@ -953,7 +963,13 @@ textarea.form-control {
   }
   
   .contact-section p {
-    font-size: 1rem;
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+  
+  .detail-item {
+    font-size: 0.95rem;
+    justify-content: center;
   }
   
   .contact-form {
@@ -964,10 +980,6 @@ textarea.form-control {
   .contact-content {
     padding-right: 0.5rem !important;
     padding-left: 0.5rem !important;
-  }
-  
-  .detail-item {
-    justify-content: center;
   }
   
   .social-icons {
@@ -1012,6 +1024,19 @@ textarea.form-control {
     padding: 2.5rem 0;
   }
   
+  .contact-section h2 {
+    font-size: 1.6rem;
+  }
+  
+  .contact-section p {
+    font-size: 0.9rem;
+    line-height: 1.65;
+  }
+  
+  .detail-item {
+    font-size: 0.9rem;
+  }
+  
   .contact-form {
     padding: 1rem !important;
   }
@@ -1031,13 +1056,27 @@ textarea.form-control {
     padding: 0.65rem 0.75rem;
   }
 }
+
+@media (max-width: 400px) {
+  .contact-section h2 {
+    font-size: 1.5rem;
+  }
+  .contact-section p {
+    font-size: 0.85rem;
+    line-height: 1.6;
+  }
+  .detail-item {
+    font-size: 0.85rem;
+  }
+}
 /* Contact Section CSS (unchanged from your original) */
 
 /* Updated Footer CSS with Consistent Responsive Behavior */
+/* Footer Section - Updated with Matching Contact Section Padding */
 .footer-section {
   background: linear-gradient(to right, #0f0f0f, #1a1a1a);
   color: #fff;
-  padding: 4rem 0 2rem;
+  padding: 4rem 0 1rem;
   font-family: 'Fira Sans', sans-serif;
 }
 
@@ -1047,11 +1086,11 @@ textarea.form-control {
   background: linear-gradient(90deg, #ff6a00, #ff0066);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   display: inline-block;
 }
 
-.footer-tagline {
+.footer-text {
   font-size: 1.1rem;
   line-height: 1.7;
   color: #ccc;
@@ -1061,7 +1100,7 @@ textarea.form-control {
 .footer-heading {
   font-size: 1.3rem;
   font-weight: 600;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.5rem;
   color: #fff;
   position: relative;
   display: inline-block;
@@ -1073,56 +1112,52 @@ textarea.form-control {
   width: 40px;
   height: 3px;
   background: linear-gradient(to right, #ff6a00, #ff0066);
-  margin-top: 0.5rem;
+  margin-top: 0.75rem;
 }
 
-.footer-section ul {
+.footer-links {
   padding: 0;
   list-style: none;
 }
 
-.footer-section ul li {
-  margin-bottom: 0.7rem;
+.footer-links li {
+  margin-bottom: 0.75rem;
 }
 
-.footer-section ul li a {
+.footer-links a {
   color: #ccc;
   text-decoration: none;
   transition: color 0.3s ease;
   font-size: 1rem;
 }
 
-.footer-section ul li a:hover {
+.footer-links a:hover {
   color: #ff6a00;
 }
 
-.contact-info {
-  padding: 1rem 0;
-}
-
-.contact-info p {
+.footer-contact p {
   color: #ccc;
-  margin-bottom: 0.8rem;
+  margin-bottom: 1rem;
   font-size: 1rem;
   display: flex;
   align-items: center;
 }
 
-.contact-info i {
+.footer-contact i {
   color: #ff6a00;
   width: 20px;
-  margin-right: 0.5rem;
+  margin-right: 0.75rem;
 }
 
 .footer-social {
   display: flex;
-  gap: 1rem;
-  margin-top: 1rem;
+  gap: 1.25rem;
+  margin-top: 1.5rem;
 }
 
 .footer-social a {
   color: #ccc;
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   transition: color 0.3s ease;
 }
 
@@ -1130,124 +1165,168 @@ textarea.form-control {
   color: #ff6a00;
 }
 
-.footer-bottom-links {
-  display: flex;
-  gap: 1.5rem;
-  flex-wrap: wrap;
+.footer-bottom {
+  border-top: 1px solid #333;
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  color: #777;
+  font-size: 0.95rem;
+  text-align: center;
 }
 
-.footer-bottom-links a {
-  color: #aaa;
-  font-size: 0.9rem;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.footer-bottom-links a:hover {
-  color: #ff6a00;
-}
-
-/* Responsive Adjustments Matching Contact Section */
-@media (max-width: 1199.98px) {
+/* Responsive Padding Adjustments (Matches Contact Section) */
+@media (max-width: 1200px) {
+  .footer-section {
+    padding: 3.5rem 0 1rem;
+  }
   .footer-logo {
     font-size: 2.3rem;
+    margin-bottom: 1.25rem;
   }
-  .footer-tagline {
+  .footer-text {
     font-size: 1.05rem;
+    margin-bottom: 1.25rem;
   }
   .footer-heading {
     font-size: 1.2rem;
+    margin-bottom: 1.25rem;
   }
-  .footer-section ul li a,
-  .contact-info p {
+  .footer-links a,
+  .footer-contact p {
     font-size: 0.95rem;
+  }
+  .footer-contact i {
+    margin-right: 0.5rem;
+  }
+  .footer-social {
+    gap: 1rem;
+    margin-top: 1.25rem;
   }
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 992px) {
   .footer-section {
-    padding: 3.5rem 0 2rem;
+    padding: 3rem 0 1rem;
   }
   .footer-logo {
     font-size: 2.1rem;
+    margin-bottom: 1rem;
   }
-  .footer-tagline {
+  .footer-text {
     font-size: 1rem;
+    margin-bottom: 1rem;
   }
   .footer-heading {
     font-size: 1.15rem;
+    margin-bottom: 1rem;
   }
-  .footer-section ul li a,
-  .contact-info p {
-    font-size: 0.9rem;
+  .footer-links li {
+    margin-bottom: 0.5rem;
+  }
+  .footer-contact p {
+    margin-bottom: 0.75rem;
+  }
+  .footer-social {
+    margin-top: 1rem;
+  }
+  .footer-bottom {
+    margin-top: 2.5rem;
+    padding-top: 1.25rem;
   }
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
   .footer-section {
-    padding: 3rem 0 1.5rem;
+    padding: 2.5rem 0 1rem;
     text-align: center;
+  }
+  .footer-logo {
+    font-size: 2rem;
   }
   .footer-heading::after {
     margin-left: auto;
     margin-right: auto;
   }
+  .footer-links {
+    margin-bottom: 1.5rem;
+  }
+  .footer-contact p {
+    justify-content: center;
+  }
   .footer-social {
     justify-content: center;
+    margin-top: 1.5rem;
   }
-  .contact-info p {
-    justify-content: center;
-  }
-  .footer-logo {
-    font-size: 2rem;
-  }
-  .footer-tagline {
-    font-size: 0.95rem;
-  }
-  .footer-heading {
-    font-size: 1.1rem;
+  .footer-bottom {
+    margin-top: 2rem;
+    padding-top: 1rem;
   }
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 576px) {
   .footer-section {
-    padding: 2.5rem 0 1rem;
+    padding: 2rem 0 1rem;
   }
   .footer-logo {
     font-size: 1.8rem;
+    margin-bottom: 0.75rem;
   }
-  .footer-tagline {
-    font-size: 0.9rem;
-    line-height: 1.6;
+  .footer-text {
+    font-size: 0.95rem;
+    margin-bottom: 0.75rem;
   }
   .footer-heading {
-    font-size: 1.05rem;
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
   }
-  .footer-section ul li a,
-  .contact-info p {
+  .footer-heading::after {
+    margin-top: 0.5rem;
+  }
+  .footer-links a,
+  .footer-contact p {
+    font-size: 0.9rem;
+  }
+  .footer-contact i {
+    margin-right: 0.5rem;
+  }
+  .footer-social {
+    gap: 0.75rem;
+    margin-top: 1rem;
+  }
+  .footer-social a {
+    font-size: 1.1rem;
+  }
+  .footer-bottom {
+    margin-top: 1.5rem;
+    padding-top: 0.75rem;
     font-size: 0.85rem;
-  }
-  .footer-bottom-links {
-    gap: 1rem;
-    justify-content: center;
-  }
-  .footer-bottom-links a {
-    font-size: 0.8rem;
   }
 }
 
 @media (max-width: 400px) {
+  .footer-section {
+    padding: 1.75rem 0 0.75rem;
+  }
   .footer-logo {
     font-size: 1.6rem;
   }
-  .footer-tagline {
-    font-size: 0.85rem;
+  .footer-text {
+    font-size: 0.9rem;
+    line-height: 1.6;
   }
   .footer-heading {
     font-size: 1rem;
   }
-  .footer-section ul li a,
-  .contact-info p {
+  .footer-links a,
+  .footer-contact p {
+    font-size: 0.85rem;
+  }
+  .footer-social a {
+    font-size: 1rem;
+  }
+  .footer-bottom {
+    margin-top: 1.25rem;
+    padding-top: 0.5rem;
     font-size: 0.8rem;
   }
 }
