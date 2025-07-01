@@ -704,7 +704,6 @@ html{
 /* === CONTACT SECTION === */
 /* Contact Section Styles */
 /* Contact Section Styles */
-/* Contact Section Styles */
 .contact-section {
   background: #fff;
   color: #000;
@@ -731,7 +730,7 @@ html{
 }
 
 .contact-section p {
-  font-size: 1.1rem;
+  font-size: 1.1rem; /* Base font size */
   line-height: 1.8;
   color: #444;
   margin-bottom: 1.5rem;
@@ -764,7 +763,7 @@ html{
   max-width: 95%;
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
+  gap: 1rem; /* Reduced gap slightly for less congestion */
   padding: 2rem;
   background: #fff;
   border-radius: 1.25rem;
@@ -893,16 +892,19 @@ textarea.form-control {
   transform: translateY(-3px);
 }
 
-/* Responsive Text Sizing */
+/* Responsive Styles */
 @media (max-width: 1199.98px) {
   .contact-section h2 {
     font-size: 2.2rem;
   }
-  .contact-section p {
-    font-size: 1.05rem;
+  .contact-content {
+    padding: 0 2rem;
   }
-  .detail-item {
-    font-size: 1rem;
+  .contact-form {
+    padding: 1.8rem; /* Slightly reduced padding */
+  }
+  .contact-section p {
+    font-size: 1.05rem; /* Adjusted paragraph font size */
   }
 }
 
@@ -915,17 +917,8 @@ textarea.form-control {
     font-size: 2rem;
   }
   
-  .contact-section p {
-    font-size: 1rem;
-    line-height: 1.75;
-  }
-  
-  .detail-item {
-    font-size: 0.98rem;
-  }
-  
   .contact-form {
-    padding: 1.5rem;
+    padding: 1.25rem; /* Further reduced padding */
   }
   
   .form-control::placeholder {
@@ -939,6 +932,12 @@ textarea.form-control {
   
   .form-control {
     font-size: 0.95rem;
+    padding: 0.7rem 0.7rem; /* Slightly reduced padding */
+  }
+  
+  .contact-section p {
+    font-size: 1rem; /* Further reduced paragraph font size */
+    line-height: 1.7; /* Adjusted line height for better readability */
   }
 }
 
@@ -948,12 +947,12 @@ textarea.form-control {
   }
   
   .contact-content {
-    padding: 0 1.5rem;
+    padding: 0 1rem; /* Reduced padding for content */
     text-align: center;
   }
   
   .contact-text, .contact-details, .social-icons {
-    padding: 0 1rem;
+    padding: 0 0.75rem; /* Reduced padding */
   }
   
   .contact-section h2 {
@@ -963,23 +962,25 @@ textarea.form-control {
   }
   
   .contact-section p {
-    font-size: 0.95rem;
-    line-height: 1.7;
-  }
-  
-  .detail-item {
-    font-size: 0.95rem;
-    justify-content: center;
+    font-size: 0.95rem; /* Further reduced for smaller screens */
+    line-height: 1.6;
   }
   
   .contact-form {
     margin-right: 0.5rem !important;
     margin-left: 0.5rem !important;
+    padding: 1rem; /* Reduced padding for less congestion */
+    gap: 0.8rem; /* Reduced gap between form elements */
   }
   
   .contact-content {
     padding-right: 0.5rem !important;
     padding-left: 0.5rem !important;
+  }
+  
+  .detail-item {
+    justify-content: center;
+    font-size: 1rem; /* Adjusted for consistency */
   }
   
   .social-icons {
@@ -991,7 +992,7 @@ textarea.form-control {
     margin-right: 0.5rem !important;
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 0.8rem; /* Reduced gap */
   }
   
   .row.g-md-4 > [class^="col-"] {
@@ -1016,6 +1017,7 @@ textarea.form-control {
   
   .form-control {
     font-size: 0.9rem;
+    padding: 0.65rem 0.7rem; /* Further reduced padding */
   }
 }
 
@@ -1024,21 +1026,9 @@ textarea.form-control {
     padding: 2.5rem 0;
   }
   
-  .contact-section h2 {
-    font-size: 1.6rem;
-  }
-  
-  .contact-section p {
-    font-size: 0.9rem;
-    line-height: 1.65;
-  }
-  
-  .detail-item {
-    font-size: 0.9rem;
-  }
-  
   .contact-form {
-    padding: 1rem !important;
+    padding: 0.8rem !important; /* Further reduced padding for smallest screens */
+    gap: 0.7rem; /* Reduced gap for form elements */
   }
   
   .btn-primary, .read-more-btn {
@@ -1053,30 +1043,27 @@ textarea.form-control {
   
   .form-control {
     font-size: 0.85rem;
-    padding: 0.65rem 0.75rem;
+    padding: 0.6rem 0.65rem; /* Minimized padding */
   }
-}
-
-@media (max-width: 400px) {
-  .contact-section h2 {
-    font-size: 1.5rem;
-  }
+  
   .contact-section p {
-    font-size: 0.85rem;
-    line-height: 1.6;
+    font-size: 0.9rem; /* Smallest paragraph font size */
+    line-height: 1.5; /* Adjusted for readability */
   }
+  
+  .contact-section h2 {
+    font-size: 1.6rem; /* Further reduced heading size */
+  }
+  
   .detail-item {
-    font-size: 0.85rem;
+    font-size: 0.95rem; /* Adjusted for small screens */
   }
 }
-/* Contact Section CSS (unchanged from your original) */
-
 /* Updated Footer CSS with Consistent Responsive Behavior */
-/* Footer Section - Updated with Matching Contact Section Padding */
 .footer-section {
   background: linear-gradient(to right, #0f0f0f, #1a1a1a);
   color: #fff;
-  padding: 4rem 0 1rem;
+  padding: 4rem 0 2rem;
   font-family: 'Fira Sans', sans-serif;
 }
 
@@ -1086,11 +1073,11 @@ textarea.form-control {
   background: linear-gradient(90deg, #ff6a00, #ff0066);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   display: inline-block;
 }
 
-.footer-text {
+.footer-tagline {
   font-size: 1.1rem;
   line-height: 1.7;
   color: #ccc;
@@ -1100,7 +1087,7 @@ textarea.form-control {
 .footer-heading {
   font-size: 1.3rem;
   font-weight: 600;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.2rem;
   color: #fff;
   position: relative;
   display: inline-block;
@@ -1112,52 +1099,56 @@ textarea.form-control {
   width: 40px;
   height: 3px;
   background: linear-gradient(to right, #ff6a00, #ff0066);
-  margin-top: 0.75rem;
+  margin-top: 0.5rem;
 }
 
-.footer-links {
+.footer-section ul {
   padding: 0;
   list-style: none;
 }
 
-.footer-links li {
-  margin-bottom: 0.75rem;
+.footer-section ul li {
+  margin-bottom: 0.7rem;
 }
 
-.footer-links a {
+.footer-section ul li a {
   color: #ccc;
   text-decoration: none;
   transition: color 0.3s ease;
   font-size: 1rem;
 }
 
-.footer-links a:hover {
+.footer-section ul li a:hover {
   color: #ff6a00;
 }
 
-.footer-contact p {
+.contact-info {
+  padding: 1rem 0;
+}
+
+.contact-info p {
   color: #ccc;
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
   font-size: 1rem;
   display: flex;
   align-items: center;
 }
 
-.footer-contact i {
+.contact-info i {
   color: #ff6a00;
   width: 20px;
-  margin-right: 0.75rem;
+  margin-right: 0.5rem;
 }
 
 .footer-social {
   display: flex;
-  gap: 1.25rem;
-  margin-top: 1.5rem;
+  gap: 1rem;
+  margin-top: 1rem;
 }
 
 .footer-social a {
   color: #ccc;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   transition: color 0.3s ease;
 }
 
@@ -1165,168 +1156,124 @@ textarea.form-control {
   color: #ff6a00;
 }
 
-.footer-bottom {
-  border-top: 1px solid #333;
-  margin-top: 3rem;
-  padding-top: 1.5rem;
-  color: #777;
-  font-size: 0.95rem;
-  text-align: center;
+.footer-bottom-links {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
 }
 
-/* Responsive Padding Adjustments (Matches Contact Section) */
-@media (max-width: 1200px) {
-  .footer-section {
-    padding: 3.5rem 0 1rem;
-  }
+.footer-bottom-links a {
+  color: #aaa;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-bottom-links a:hover {
+  color: #ff6a00;
+}
+
+/* Responsive Adjustments Matching Contact Section */
+@media (max-width: 1199.98px) {
   .footer-logo {
     font-size: 2.3rem;
-    margin-bottom: 1.25rem;
   }
-  .footer-text {
+  .footer-tagline {
     font-size: 1.05rem;
-    margin-bottom: 1.25rem;
   }
   .footer-heading {
     font-size: 1.2rem;
-    margin-bottom: 1.25rem;
   }
-  .footer-links a,
-  .footer-contact p {
+  .footer-section ul li a,
+  .contact-info p {
     font-size: 0.95rem;
-  }
-  .footer-contact i {
-    margin-right: 0.5rem;
-  }
-  .footer-social {
-    gap: 1rem;
-    margin-top: 1.25rem;
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991.98px) {
   .footer-section {
-    padding: 3rem 0 1rem;
+    padding: 3.5rem 0 2rem;
   }
   .footer-logo {
     font-size: 2.1rem;
-    margin-bottom: 1rem;
   }
-  .footer-text {
+  .footer-tagline {
     font-size: 1rem;
-    margin-bottom: 1rem;
   }
   .footer-heading {
     font-size: 1.15rem;
-    margin-bottom: 1rem;
   }
-  .footer-links li {
-    margin-bottom: 0.5rem;
-  }
-  .footer-contact p {
-    margin-bottom: 0.75rem;
-  }
-  .footer-social {
-    margin-top: 1rem;
-  }
-  .footer-bottom {
-    margin-top: 2.5rem;
-    padding-top: 1.25rem;
+  .footer-section ul li a,
+  .contact-info p {
+    font-size: 0.9rem;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
   .footer-section {
-    padding: 2.5rem 0 1rem;
+    padding: 3rem 0 1.5rem;
     text-align: center;
-  }
-  .footer-logo {
-    font-size: 2rem;
   }
   .footer-heading::after {
     margin-left: auto;
     margin-right: auto;
   }
-  .footer-links {
-    margin-bottom: 1.5rem;
-  }
-  .footer-contact p {
-    justify-content: center;
-  }
   .footer-social {
     justify-content: center;
-    margin-top: 1.5rem;
   }
-  .footer-bottom {
-    margin-top: 2rem;
-    padding-top: 1rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .footer-section {
-    padding: 2rem 0 1rem;
+  .contact-info p {
+    justify-content: center;
   }
   .footer-logo {
-    font-size: 1.8rem;
-    margin-bottom: 0.75rem;
+    font-size: 2rem;
   }
-  .footer-text {
+  .footer-tagline {
     font-size: 0.95rem;
-    margin-bottom: 0.75rem;
   }
   .footer-heading {
     font-size: 1.1rem;
-    margin-bottom: 0.75rem;
-  }
-  .footer-heading::after {
-    margin-top: 0.5rem;
-  }
-  .footer-links a,
-  .footer-contact p {
-    font-size: 0.9rem;
-  }
-  .footer-contact i {
-    margin-right: 0.5rem;
-  }
-  .footer-social {
-    gap: 0.75rem;
-    margin-top: 1rem;
-  }
-  .footer-social a {
-    font-size: 1.1rem;
-  }
-  .footer-bottom {
-    margin-top: 1.5rem;
-    padding-top: 0.75rem;
-    font-size: 0.85rem;
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 575.98px) {
   .footer-section {
-    padding: 1.75rem 0 0.75rem;
+    padding: 2.5rem 0 1rem;
   }
   .footer-logo {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
-  .footer-text {
+  .footer-tagline {
     font-size: 0.9rem;
     line-height: 1.6;
   }
   .footer-heading {
-    font-size: 1rem;
+    font-size: 1.05rem;
   }
-  .footer-links a,
-  .footer-contact p {
+  .footer-section ul li a,
+  .contact-info p {
     font-size: 0.85rem;
   }
-  .footer-social a {
+  .footer-bottom-links {
+    gap: 1rem;
+    justify-content: center;
+  }
+  .footer-bottom-links a {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .footer-logo {
+    font-size: 1.6rem;
+  }
+  .footer-tagline {
+    font-size: 0.85rem;
+  }
+  .footer-heading {
     font-size: 1rem;
   }
-  .footer-bottom {
-    margin-top: 1.25rem;
-    padding-top: 0.5rem;
+  .footer-section ul li a,
+  .contact-info p {
     font-size: 0.8rem;
   }
 }
