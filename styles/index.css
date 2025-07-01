@@ -1063,7 +1063,7 @@ textarea.form-control {
 .footer-section {
   background: linear-gradient(to right, #0f0f0f, #1a1a1a);
   color: #fff;
-  padding: 4rem 0 2rem; /* Base padding */
+  padding: 4rem 0 2rem;
   font-family: 'Fira Sans', sans-serif;
 }
 
@@ -1078,14 +1078,14 @@ textarea.form-control {
 }
 
 .footer-tagline {
-  font-size: 1.1rem; /* Base font size */
+  font-size: 1.1rem;
   line-height: 1.7;
   color: #ccc;
   margin-bottom: 1.5rem;
 }
 
 .footer-heading {
-  font-size: 1.3rem; /* Base font size */
+  font-size: 1.3rem;
   font-weight: 600;
   margin-bottom: 1.2rem;
   color: #fff;
@@ -1115,7 +1115,7 @@ textarea.form-control {
   color: #ccc;
   text-decoration: none;
   transition: color 0.3s ease;
-  font-size: 1rem; /* Base font size */
+  font-size: 1rem;
 }
 
 .footer-section ul li a:hover {
@@ -1123,13 +1123,13 @@ textarea.form-control {
 }
 
 .contact-info {
-  padding: 1rem 0; /* Base padding */
+  padding: 1rem 0;
 }
 
 .contact-info p {
   color: #ccc;
   margin-bottom: 0.8rem;
-  font-size: 1rem; /* Base font size */
+  font-size: 1rem;
   display: flex;
   align-items: center;
 }
@@ -1142,7 +1142,7 @@ textarea.form-control {
 
 .footer-social {
   display: flex;
-  gap: 1rem; /* Base gap */
+  gap: 1rem;
   margin-top: 1rem;
 }
 
@@ -1158,13 +1158,13 @@ textarea.form-control {
 
 .footer-bottom-links {
   display: flex;
-  gap: 1.5rem; /* Base gap */
+  gap: 1.5rem;
   flex-wrap: wrap;
 }
 
 .footer-bottom-links a {
   color: #aaa;
-  font-size: 0.9rem; /* Base font size */
+  font-size: 0.9rem;
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -1179,53 +1179,39 @@ textarea.form-control {
     font-size: 2.3rem;
   }
   .footer-tagline {
-    font-size: 1.05rem; /* Adjusted for consistency */
-    line-height: 1.6; /* Slightly reduced line height */
+    font-size: 1.05rem;
   }
   .footer-heading {
     font-size: 1.2rem;
   }
   .footer-section ul li a,
   .contact-info p {
-    font-size: 0.95rem; /* Adjusted font size */
-  }
-  .footer-bottom-links a {
-    font-size: 0.85rem; /* Slightly reduced */
+    font-size: 0.95rem;
   }
 }
 
 @media (max-width: 991.98px) {
   .footer-section {
-    padding: 3.5rem 0 1.8rem; /* Reduced padding */
+    padding: 3.5rem 0 2rem;
   }
   .footer-logo {
     font-size: 2.1rem;
   }
   .footer-tagline {
-    font-size: 1rem; /* Further reduced */
-    line-height: 1.6;
+    font-size: 1rem;
   }
   .footer-heading {
     font-size: 1.15rem;
   }
   .footer-section ul li a,
   .contact-info p {
-    font-size: 0.9rem; /* Consistent with contact section */
-  }
-  .footer-bottom-links a {
-    font-size: 0.85rem;
-  }
-  .footer-social {
-    gap: 0.9rem; /* Slightly reduced gap */
-  }
-  .footer-bottom-links {
-    gap: 1.3rem; /* Slightly reduced gap */
+    font-size: 0.9rem;
   }
 }
 
 @media (max-width: 767.98px) {
   .footer-section {
-    padding: 2.5rem 0 1.5rem; /* Further reduced padding */
+    padding: 3rem 0 1.5rem;
     text-align: center;
   }
   .footer-heading::after {
@@ -1234,100 +1220,60 @@ textarea.form-control {
   }
   .footer-social {
     justify-content: center;
-    gap: 0.8rem; /* Reduced gap for less congestion */
   }
   .contact-info p {
     justify-content: center;
-    font-size: 0.9rem; /* Adjusted font size */
   }
   .footer-logo {
-    font-size: 1.8rem; /* Further reduced */
+    font-size: 2rem;
   }
   .footer-tagline {
-    font-size: 0.95rem; /* Consistent with contact section */
-    line-height: 1.5; /* Adjusted line height */
+    font-size: 0.95rem;
   }
   .footer-heading {
     font-size: 1.1rem;
-  }
-  .footer-section ul li a {
-    font-size: 0.9rem;
-  }
-  .footer-bottom-links {
-    gap: 1rem; /* Reduced gap */
-    justify-content: center;
-  }
-  .footer-bottom-links a {
-    font-size: 0.85rem;
-  }
-  .contact-info {
-    padding: 0.8rem 0; /* Reduced padding */
   }
 }
 
 @media (max-width: 575.98px) {
   .footer-section {
-    padding: 2rem 0 1rem; /* Further reduced padding */
+    padding: 2.5rem 0 1rem;
   }
   .footer-logo {
-    font-size: 1.6rem; /* Further reduced */
+    font-size: 1.8rem;
   }
   .footer-tagline {
-    font-size: 0.9rem; /* Consistent with contact section */
-    line-height: 1.5;
+    font-size: 0.9rem;
+    line-height: 1.6;
   }
   .footer-heading {
-    font-size: 1rem; /* Further reduced */
-  }
-  .footer-heading::after {
-    width: 30px; /* Slightly smaller underline */
+    font-size: 1.05rem;
   }
   .footer-section ul li a,
   .contact-info p {
-    font-size: 0.85rem; /* Consistent with contact section */
+    font-size: 0.85rem;
+  }
+  .footer-bottom-links {
+    gap: 1rem;
+    justify-content: center;
   }
   .footer-bottom-links a {
     font-size: 0.8rem;
   }
-  .footer-social {
-    gap: 0.7rem; /* Further reduced gap */
-  }
-  .footer-bottom-links {
-    gap: 0.8rem; /* Further reduced gap */
-  }
-  .contact-info {
-    padding: 0.6rem 0; /* Further reduced padding */
-  }
 }
 
 @media (max-width: 400px) {
-  .footer-section {
-    padding: 1.8rem 0 0.8rem; /* Minimized padding for smallest screens */
-  }
   .footer-logo {
-    font-size: 1.5rem; /* Further reduced */
+    font-size: 1.6rem;
   }
   .footer-tagline {
-    font-size: 0.85rem; /* Consistent with contact section */
-    line-height: 1.4; /* Adjusted for readability */
+    font-size: 0.85rem;
   }
   .footer-heading {
-    font-size: 0.95rem; /* Further reduced */
-  }
-  .footer-heading::after {
-    width: 25px; /* Smaller underline */
+    font-size: 1rem;
   }
   .footer-section ul li a,
   .contact-info p {
-    font-size: 0.8rem; /* Consistent with contact section */
-  }
-  .footer-bottom-links a {
-    font-size: 0.75rem; /* Further reduced */
-  }
-  .footer-social {
-    gap: 0.6rem; /* Minimized gap */
-  }
-  .footer-bottom-links {
-    gap: 0.7rem; /* Minimized gap */
+    font-size: 0.8rem;
   }
 }
