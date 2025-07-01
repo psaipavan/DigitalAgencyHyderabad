@@ -525,7 +525,7 @@ html{
     font-size: 1.15rem;
     font-weight: 400;
     margin-top: -12px;
-    margin-bottom: 24px;
+    margin-bottom: 6px;
     line-height: 1.6;
     max-width: 800px;
 }
@@ -534,7 +534,7 @@ html{
     .portfolio-subtext {
         font-size: 1rem;
         text-align: left;
-        margin-bottom: 30px;
+        margin-bottom: 6px;
     }
 }
 
@@ -543,7 +543,7 @@ html{
         font-size: 0.95rem;
         text-align: center;
         margin-top: -8px;
-        margin-bottom: 32px;
+        margin-bottom: 6px;
     }
 }
 
