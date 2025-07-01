@@ -224,12 +224,13 @@ html{
 }
 /* === PROJECTS SECTION === */
 .projects-section {
-    height: 100vh; /* Strict 100vh height */
-    padding: 40px 0; /* Reduced padding to fit content */
+    height: 100vh;
+    padding: 40px 0;
+    margin-top: 80px; /* space for navbar */
     background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%);
     position: relative;
     overflow: hidden;
-    color:white;
+    color: white;
 }
 
 .projects-section::before {
@@ -239,7 +240,6 @@ html{
     left: 0;
     width: 100%;
     height: 100%;
-    
     z-index: 0;
 }
 
@@ -266,6 +266,7 @@ html{
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.15);
     padding: 24px;
+    padding-bottom: 60px; /* Extra space at bottom */
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     position: relative;
@@ -275,9 +276,7 @@ html{
 
 .project-card:hover {
     transform: translateY(-12px) scale(1.03);
-    box-shadow: 
-        0 24px 48px rgba(0, 0, 0, 0.45),
-        0 0 0 1px rgba(255, 255, 255, 0.15);
+    box-shadow: 0 24px 48px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(255, 255, 255, 0.15);
     background: rgba(255, 255, 255, 0.1);
 }
 
@@ -304,6 +303,9 @@ html{
 .project-info {
     text-align: left;
     color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .project-info h3 {
@@ -334,7 +336,7 @@ html{
     font-size: 0.95rem;
     line-height: 1.7;
     color: rgba(255, 255, 255, 0.85);
-    margin-bottom: 24px;
+    margin-bottom: 0; /* remove extra margin */
     display: -webkit-box;
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
@@ -354,6 +356,8 @@ html{
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
+    margin-top: 16px; /* space between paragraph and button */
+    margin-bottom: 10px; /* space between button and card bottom */
 }
 
 .read-more-btn::before {
@@ -391,15 +395,15 @@ html{
         flex: 0 0 400px;
         height: 520px;
     }
-    
+
     .project-img-container {
         height: 230px;
     }
-    
+
     .project-info h3 {
         font-size: 1.6rem;
     }
-    
+
     .project-info p {
         font-size: 1rem;
     }
@@ -410,15 +414,15 @@ html{
         flex: 0 0 320px;
         height: 450px;
     }
-    
+
     .project-img-container {
         height: 180px;
     }
-    
+
     .project-info h3 {
         font-size: 1.4rem;
     }
-    
+
     .project-info p {
         font-size: 0.9rem;
     }
@@ -428,16 +432,16 @@ html{
     .projects-section {
         padding: 60px 0;
     }
-    
+
     .project-card {
         flex: 0 0 300px;
         height: 430px;
     }
-    
+
     .project-info h3 {
         font-size: 1.3rem;
     }
-    
+
     .project-info p {
         font-size: 0.9rem;
     }
@@ -447,30 +451,30 @@ html{
     .projects-section {
         padding: 60px 0;
     }
-    
+
     .project-scroll-wrapper {
         gap: 20px;
     }
-    
+
     .project-card {
         flex: 0 0 280px;
         height: 400px;
     }
-    
+
     .project-img-container {
         height: 160px;
     }
-    
+
     .project-info h3 {
         font-size: 1.2rem;
         margin-bottom: 12px;
     }
-    
+
     .project-info p {
         font-size: 0.85rem;
         -webkit-line-clamp: 3;
     }
-    
+
     .projects-section h2 {
         font-size: 2.5rem;
     }
@@ -478,34 +482,34 @@ html{
 
 @media (max-width: 576px) {
     .projects-section {
-      height: auto;
-      padding: 40px 0;
+        height: auto;
+        padding: 40px 0;
     }
-    
+
     .project-card {
         flex: 0 0 260px;
         height: 380px;
     }
-    
+
     .project-img-container {
         height: 140px;
     }
-    
+
     .project-info h3 {
         font-size: 1rem;
         margin-bottom: 12px;
     }
-    
+
     .project-info p {
         font-size: 0.8rem;
         -webkit-line-clamp: 3;
     }
-    
+
     .read-more-btn {
         padding: 8px 20px;
         font-size: 0.75rem;
     }
-    
+
     .projects-section h2 {
         font-size: 2rem;
     }
