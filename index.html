@@ -9,15 +9,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    
+    <!-- Add this line in your HTML <head> or before your JS script -->
+
 </head>
 <body>
     
 <!-- nav bar -->
 <nav class="navbar navbar-expand-lg d-flex justify-content-center fixed-top" id="mainNavbar">
   <div class="container-fluid navbarcontainer shadow justify-content-between p-3 rounded-4 mx-4 mt-1">
-    <a class="navbar-brand px-3" href="#"><img src="" alt="logo goes here"></a>
-
+    <a class="navbar-brand px-3" href="#">
+      <div class="logos">
+        <img src="./assets/WhatsApp Image 2025-07-03 at 19.28.02_9369347f.jpg" alt="logo goes here">
+      </div>
+    </a>
     <button class="navbar-toggler ms-auto border-0" type="button" data-bs-toggle="collapse"
       data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
       aria-label="Toggle navigation" style="box-shadow: none;">
@@ -251,7 +255,7 @@
       <!-- Left Column - Contact Info -->
       <div class="col-lg-6 col-md-12">
         <div class="contact-content">
-          <h2 class="mt-5">Let's Create Something Amazing Together</h2>
+          <h2 class="mt-4">Let's Create Something Amazing Together</h2>
           <div class="contact-text">
             <p>Have a project in mind or want to discuss how we can help your business grow? Reach out to us - we'd love to hear from you.</p>
             <p>Our team is ready to answer your questions and provide the digital solutions your business needs.</p>
@@ -308,7 +312,7 @@
   <div class="container-fluid py-4 px-lg-5 px-md-4 px-3">
     <div class="row text-center text-lg-start">
       <div class="col-lg-4 mb-4 mb-lg-0">
-        <h3 class="footer-logo mb-3">DigitalAgency</h3>
+        <h3 class="footer-logo mb-3">Hivitrax</h3>
         <p class="footer-text mb-3">
           We create digital experiences that deliver results.
         </p>
@@ -343,18 +347,20 @@
         <div class="footer-contact">
           <p><i class="fas fa-map-marker-alt me-2"></i> 123 Design Street</p>
           <p><i class="fas fa-phone-alt me-2"></i> +1 234 567 890</p>
-          <p><i class="fas fa-envelope me-2"></i> hello@digitalagency.com</p>
+          <p><i class="fas fa-envelope me-2"></i> hivitrax@gmail.com</p>
         </div>
       </div>
     </div>
 
     <div class="footer-bottom text-center pt-3">
-      <p class="mb-0 small">© 2025 DigitalAgency. All rights reserved.</p>
+      <p class="mb-0 small">© 2025 Hivitrax. All rights reserved.</p>
     </div>
   </div>
 </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
-<script src="./dynamic styles/index.js"></script>
+    <!-- Then your JS file -->
+    <script src="./dynamic styles/index.js"></script>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   const navbar = document.getElementById('mainNavbar');
@@ -397,7 +403,10 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 </script>
+
 <script src="https://kit.fontawesome.com/4783cba7e4.js" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>   
+
+
 </body>
 </html>

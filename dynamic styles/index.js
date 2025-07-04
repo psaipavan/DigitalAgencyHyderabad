@@ -137,12 +137,76 @@
 // console.log(document);
 
 
-let API="http://localhost:3000/student";
-async function getData(){
-    let res=await fetch(API,{
-        method:"GET"
-    });
-    let data=await res.json();
-    console.log(data);
-}
-getData();
+// let API="http://localhost:3000/student";
+// async function getData(){
+//     let res=await fetch(API,{
+//         method:"GET"
+//     });
+//     let data=await res.json();
+//     console.log(data);
+// }
+// getData();
+
+
+  // const form = document.querySelector('.contact-form');
+  // form.addEventListener('submit', async (e) => {
+  //   e.preventDefault();
+
+  //   const name = form.querySelector('input[placeholder="Your Name"]').value;
+  //   const email = form.querySelector('input[placeholder="Your Email"]').value;
+  //   const subject = form.querySelector('input[placeholder="Subject"]').value;
+  //   const message = form.querySelector('textarea').value;
+
+  //   const response = await fetch('http://localhost:5000/submit-form', {
+  //     method: 'POST',
+  //     headers: {
+  //       'Content-Type': 'application/json',
+  //     },
+  //     body: JSON.stringify({ name, email, subject, message }),
+  //   });
+
+  //   const result = await response.json();
+  //   alert(result.success || result.error);
+  // });
+
+// API="http://localhost:3000/student";
+// async function getData()
+// {
+//   try{
+//     let res=await axios.delete(API);
+//     console.log(res.data);
+
+//   }
+//   catch(err)
+//   {
+//     console.log("error handled");
+//   }
+//   alert("cant deleted");
+// }
+
+// const apiKey = "0edf63c143df47d2b0d74154250207";
+// const city = "Hyderabad";
+// const url = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}`;
+
+// async function getData() {
+//   try {
+//     const res = await axios.get(url);
+//     const data = res.data;
+
+//     const location = data.location.name + ", " + data.location.region;
+//     const temp = data.current.temp_c + "°C";
+//     const condition = data.current.condition.text;
+
+//     document.getElementById("weather").innerHTML = `
+//       <p><strong>Location:</strong> ${location}</p>
+//       <p><strong>Temperature:</strong> ${temp}</p>
+//       <p><strong>Condition:</strong> ${condition}</p>
+//     `;
+//   } catch (err) {
+//     document.getElementById("weather").innerText = "Failed to fetch weather data.";
+//   }
+// }
+
+// getData();
+
+
